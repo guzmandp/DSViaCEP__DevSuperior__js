@@ -1,6 +1,148 @@
+.color1 {color: #12222c;}
+.color2 {color: #15508d;}
+.color3 {color: #e3253d;}
+.color4 {color: #eac04a;}
+.color5 {color: #f8efcd;}
+
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Sarala';
+}
+
+html, body{
+    background-color: #12222c;
+}
+
+.nav__container{
+    height: 80px;
+    background-color: #15508d;
+    width: 100%;
+    padding: 0,20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__main{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__main h1{
+    color: #f8efcd;
+    font-size: 36px;
+}
+
+.contact__link{
+    color: #f8efcd;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+.form__container{
+     width: 100%;
+    padding: 40px 20px;
+}
+
+.card__form{
+    background-color: #eac04a;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.form__control{
+    margin-bottom: 20px;
+}
+
+.form__control label{
+    display: none;
+}
+
+.erro__message{
+    margin-top: 5px;
+    color: #e3253d;
+}
+
+.form__input{
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-size: 14px;
+    border: 0;
+}
+
+.form__input::placeholder{
+    color: #c9c9c9;
+}
+
+.form__input:disabled{
+    background-color: #ddd;
+}
+
+.btn__container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    width: 250px;
+    height: 50px;
+    background-color: #15508d;
+    border-radius: 4px;
+    border: 0;
+    color: #f8efcd;
+    font-weight: bold;
+}
+
+.btn__left{
+    margin-right: 10px;
+}
+
+.btn__right{
+    margin-left: 10px;
+}
+
+.list__container{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.card__list__item{
+    background-color: #eac04a;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+}
+
+.card__list__item h3{
+    color: #15508d;
+    font-size: 18px;
+}
+
+.address__line{
+    color: #f8efcd;
+    font-size: 14px;
+}
+
+.address__cep{
+    color: #8f8f8f;
+    font-size: 12px;
 }

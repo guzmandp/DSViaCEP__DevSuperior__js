@@ -11,75 +11,83 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="nav__container">
+        <nav class="nav__main">
             <h1>DSViaCEP</h1>
-            <div>Contato</div>
+            <div class="contact__link">Contato</div>
         </nav>
     </header>
     <main>
-        <section id="form__section">
-            <div>
+        <section id="form__section" class="form__container">
+            <div class="card__form">
                 <form name="newAddress">
-                    <div>
+                    <div class="form__control">
                         <label for="cep">CEP:</label>
                         <input 
                             name="cep" 
                             id="cep" 
+                            class="form__input"
                             type="text"
                             placeholder="CEP">
+                        <div class="erro__message">Campo requerido</div>
                     </div>
-                    <div>
+                    <div class="form__control">
                         <label for="street">Logradouro:</label>
                         <input 
                             name="street" 
                             id="street" 
+                            class="form__input"
                             type="text"
-                            placeholder="Logradouro">
+                            placeholder="Logradouro"
+                            disabled>
                     </div>
-                    <div>
+                    <div class="form__control">
                         <label for="number">Número:</label>
                         <input 
                             name="number" 
                             id="number" 
+                            class="form__input"
                             type="text"
                             placeholder="Número">
+                        <div class="erro__message">Campo requerido</div>
                     </div>
-                    <div>
+                    <div class="form__control">
                         <label for="city">Cidade:</label>
                         <input 
                             name="city" 
                             id="city" 
+                            class="form__input"
                             type="text"
-                            placeholder="Cidade">
+                            placeholder="Cidade"
+                            disabled>
                     </div>
-                    <div>
-                        <button type="submit">Salvar</button>
-                        <button>Limpar</button>
+                    <div class="btn__container">
+                        <button class="btn btn__left" type="submit">Salvar</button>
+                        <button class="btn btn__right">Limpar</button>
                     </div>
                 </form>
             </div>
         </section>
-        <section id="list__section">
-            <div>
+        <section id="list__section" class="list__container">
+            <div class="card__list__item">
                 <h3>Sao Paulo</h3>
-                <p>Rua dos jardins, 720</p>
-                <p>11200-345</p>
+                <p class="address__line">Rua dos jardins, 720</p>
+                <p class="address__cep">11200-345</p>
             </div>
-             <div>
+             <div class="card__list__item">
                 <h3>Sao Paulo</h3>
-                <p>Rua dos jardins, 720</p>
-                <p>11200-345</p>
+                <p class="address__line">Rua dos jardins, 720</p>
+                <p class="address__cep">11200-345</p>
             </div>
-             <div>
+             <div class="card__list__item">
                 <h3>Sao Paulo</h3>
-                <p>Rua dos jardins, 720</p>
-                <p>11200-345</p>
+               <p class="address__line">Rua dos jardins, 720</p>
+                <p class="address__cep">11200-345</p>
             </div>
-             <div>
+             <div class="card__list__item">
                 <h3>Sao Paulo</h3>
-                <p>Rua dos jardins, 720</p>
-                <p>11200-345</p>
+                <p class="address__line">Rua dos jardins, 720</p>
+                <p class="address__cep">11200-345</p>
             </div>
         </section>
     </main>
