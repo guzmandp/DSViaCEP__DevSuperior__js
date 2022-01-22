@@ -55,7 +55,7 @@ html, body{
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: 15px 50px;
     padding: 20px;
 }
 
@@ -75,7 +75,7 @@ html, body{
 .form__input{
     height: 50px;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 5px 15px;
     padding: 0 20px;
     font-size: 14px;
     border: 0;
@@ -98,7 +98,7 @@ html, body{
     width: 250px;
     height: 50px;
     background-color: #15508d;
-    border-radius: 4px;
+    border-radius: 5px 15px;
     border: 0;
     color: #f8efcd;
     font-weight: bold;
@@ -125,7 +125,7 @@ html, body{
 .card__list__item{
     background-color: #eac04a;
     margin-bottom: 20px;
-    border-radius: 8px;
+    border-radius: 15px 50px;
     padding: 20px;
     width: 100%;
     max-width: 900px;
