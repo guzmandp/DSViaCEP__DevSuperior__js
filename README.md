@@ -2,7 +2,7 @@
 
 ## Comenzando 🚀
 
-_consuming API ViaCEP with JavaScript
+_Consuming API ViaCEP with JavaScript._
 
 ### Test the API at this address
 
