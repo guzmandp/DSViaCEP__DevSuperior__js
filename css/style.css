@@ -125,7 +125,7 @@ html, body{
 .card__list__item{
     background-color: #eac04a;
     margin-bottom: 20px;
-    border-radius: 15px 50px;
+    border-radius: 50px 15px;
     padding: 20px;
     width: 100%;
     max-width: 900px;

@@ -1,5 +1,7 @@
 import Address from '../models/address.js';
 import * as addressService from '../controllers/services/address-service.js'
+import * as listController from './list-controller.js'
+
 
 function State() {
     this.address = new Address()
@@ -33,11 +35,16 @@ export function init() {
 
 
     state.inputNumber.addEventListener('change', handleInputNumberChange);
+    state.inputNumber.addEventListener('keyup', handleInputNumberKeyup);
     state.btnClear.addEventListener("click", handleBtnClearClick);
     state.btnSave.addEventListener("click", handleBtnSaveClick);
     state.inputCep.addEventListener("change", handleInputCepCahange)
 
    
+}
+
+function handleInputNumberKeyup(event) {
+   state.address.number = event.target.value;
 }
 
 async function handleInputCepCahange(event) {
@@ -75,9 +82,8 @@ function handleBtnClearClick(event) {
 }
 
 async function handleBtnSaveClick(event) {
-     event.preventDefault();
-    // const result = await requestService.getJson('https://viacep.com.br/ws/88101280/json/');
-    console.log(event.target);
+    event.preventDefault();
+    listController.addCard(state.address);
 }
 
 function clearForm() {
