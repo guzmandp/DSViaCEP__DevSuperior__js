@@ -1,0 +1,22 @@
+.btn__container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    width: 250px;
+    height: 50px;
+    background-color: #15508d;
+    border-radius: 5px 15px;
+    border: 0;
+    color: #f8efcd;
+    font-weight: bold;
+}
+
+.btn__left{
+    margin-right: 10px;
+}
+
+.btn__right{
+    margin-left: 10px;
+}
